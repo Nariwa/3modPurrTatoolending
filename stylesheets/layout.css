@@ -1,0 +1,98 @@
+body {
+    background-color: #D2CFCA;
+    cursor: url('../images/kyrsor2.png'), auto;
+    margin: 0;
+}
+
+
+#fonchik1 {
+    position: relative;
+    width: 100vw;
+}
+
+#oblachka {
+    position: absolute;
+    width: 100%;
+    height: 22vw;
+    overflow: hidden;
+    margin-top: -60vw;
+}
+
+#obl1, #obl2, #obl3 {
+    position: absolute;
+    width: 35vw;
+    left: -40vw;
+    animation: cloudMove 18s linear infinite;
+}
+
+#obl1 {
+    top: 0vw;
+    animation-delay: 0s;
+}
+
+#obl2 {
+    top: 6vw;
+    animation-delay: -6s;
+}
+
+#obl3 {
+    top: 2vw;
+    animation-delay: -12s;
+}
+
+
+#zdanie1 {
+    position: absolute;
+    width: 81vw;
+    margin-top: -45vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#kolokol1 {
+    position: absolute;
+    width: 3vw;
+    margin-top: -24.6vw;
+    margin-left: 20vw;
+    transform-origin: top center;
+    cursor: url('../images/kyrsor1.png') 0 0, pointer;
+}
+
+#kolokol1.swing {
+    animation: bellSwing 0.4s ease;
+}
+
+#fonchik2 {
+    width: 94vw;
+    position: relative;
+    margin-top: 10vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#recep2 {
+    position: absolute;
+    width: 93.7vw;
+    margin-top: 36.6vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#chasiki {
+    position: absolute;
+    width: 13vw;
+    margin-top: -39vw;
+    margin-left: 63vw;
+}
+
+
+
+
+
+#govno {
+    width: 100vw;
+    opacity: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
