@@ -664,14 +664,6 @@ margin-left: 25vw
     margin-top: -33.9vw;
 }
 
-#contur1 {
-    position: absolute;
-    width: 32.1vw;
-    margin-top: -33.89vw;
-    margin-left: 21.96vw;
-    opacity: 0;
-}
-
 #e1, #e2, #e3, #e4, #e5, #e6, #e7, #e8, #e9, #e10, #e11 {
     position: absolute;
 }
@@ -858,12 +850,6 @@ margin-left: 25vw
     margin-top: -13vw;
 }
 
-#contur2 {
-    position: absolute;
-    width: 32.1vw;
-    margin-top: -33.89vw;
-    margin-left: 21.96vw; 
-}
 
 #here6efon {
     position: absolute;
@@ -881,9 +867,92 @@ position: absolute;
 
 #here6ekol1, #here6ekol2, #here6ekol3, #here6ekol4 {
     position: absolute;
-    width: 5vw;
+    width: 4vw;
     margin-top: -2vw;
     margin-left: 77vw;
+}
+
+#here6ekol2 {
+    margin-left: 82vw;
+}
+
+#here6ekol3 {
+    margin-left: 87vw;
+}
+
+#here6ekol4 {
+    margin-left: 92vw;
+}
+
+#contur1,
+#contur2,
+#contur3,
+#contur4 {
+    position: absolute;
+    width: 32.1vw;
+    margin-top: -33.89vw;
+    margin-left: 21.96vw;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+#contur1.show,
+#contur2.show,
+#contur3.show,
+#contur4.show {
+    opacity: 1;
+}
+
+.tattoo-set-1 #tatyshka1,
+.tattoo-set-1 #tatyshka2 {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.tattoo-set-1 #tatyshka3,
+.tattoo-set-1 #tatyshka4 {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.tattoo-set-2 #tatyshka1,
+.tattoo-set-2 #tatyshka2 {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.tattoo-set-2 #tatyshka3,
+.tattoo-set-2 #tatyshka4 {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.tattoo-set-1 #tatyshka1,
+.tattoo-set-1 #tatyshka2 {
+    opacity: 1;
+}
+
+.tattoo-set-1 #tatyshka3,
+.tattoo-set-1 #tatyshka4 {
+    opacity: 0;
+}
+
+.tattoo-set-2 #tatyshka1,
+.tattoo-set-2 #tatyshka2 {
+    opacity: 0;
+}
+
+.tattoo-set-2 #tatyshka3,
+.tattoo-set-2 #tatyshka4 {
+    opacity: 1;
+}
+
+#tatyshka1,
+#tatyshka2,
+#tatyshka3,
+#tatyshka4 {
+    transition: opacity 0.5s ease;
 }
 
 

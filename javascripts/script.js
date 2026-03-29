@@ -134,3 +134,41 @@ makePaletteClick('palitra1');
 makePaletteClick('palitra2');
 makePaletteClick('palitra3');
 makePaletteClick('palitra4');
+
+
+const strela1 = document.getElementById('strela1');
+const strela2 = document.getElementById('strela2');
+const tatyshki = document.getElementById('tatyshki');
+
+function toggleTattooSet() {
+    tatyshki.classList.toggle('tattoo-set-1');
+    tatyshki.classList.toggle('tattoo-set-2');
+}
+
+strela1.addEventListener('click', toggleTattooSet);
+strela2.addEventListener('click', toggleTattooSet);
+
+function chooseContour(buttonId, contourId, allContourIds) {
+    const button = document.getElementById(buttonId);
+    const contour = document.getElementById(contourId);
+
+    if (!button || !contour) return;
+
+    button.addEventListener('click', () => {
+        allContourIds.forEach(id => {
+            const item = document.getElementById(id);
+            if (item) {
+                item.classList.remove('show');
+            }
+        });
+
+        contour.classList.add('show');
+    });
+}
+
+const allContours = ['contur1', 'contur2', 'contur3', 'contur4'];
+
+chooseContour('tatyshka1', 'contur1', allContours);
+chooseContour('tatyshka2', 'contur2', allContours);
+chooseContour('tatyshka3', 'contur3', allContours);
+chooseContour('tatyshka4', 'contur4', allContours);
