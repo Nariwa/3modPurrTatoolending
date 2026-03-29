@@ -955,7 +955,21 @@ position: absolute;
     transition: opacity 0.5s ease;
 }
 
+#contur2 {
+    margin-top: -37vw;
+    width: 23vw;
+    margin-left: 26vw;
+}
 
+#or41, #or42, #or43{
+    position: absolute;
+}
+
+#or41 {
+    width: 20vw;
+    margin-top: 10vw;
+    margin-left: 10vw;
+}
 
 
 /* #govno {
