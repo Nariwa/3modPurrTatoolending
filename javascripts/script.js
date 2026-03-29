@@ -20,6 +20,10 @@ zvukovichek('kolokol1', './sounds/kolokolzvonit.mp3', 'swing');
 zvukovichek('chasiki', './sounds/tiktak.mp3');
 zvukovichek('ribkakartinka', './sounds/puzirki.mp3', 'swing');
 zvukovichek('yzorik', './sounds/drevostyk.mp3', 'swing');
+zvukovichek('palitra1', './sounds/kaplya.mp3');
+zvukovichek('palitra2', './sounds/kaplya.mp3');
+zvukovichek('palitra3', './sounds/kaplya.mp3');
+zvukovichek('palitra4', './sounds/kaplya.mp3');
 
 
 
@@ -101,20 +105,32 @@ if (podskazka) {
     });
 }
 
+const needles = document.querySelectorAll('#igolo1, #igolo2, #igolo3, #igolo4');
 
-document.addEventListener("DOMContentLoaded", () => {
-  const button = document.getElementById("kraska1");
-  const palette = document.getElementById("palitra1");
-
-  let frame = 0;
-  const maxFrame = 5;
-
-  button.addEventListener("click", () => {
-    if (frame >= maxFrame) return;
-
-    frame++;
-    palette.style.backgroundPosition = (-frame * 100) + "% 0";
-  });
+needles.forEach(needle => {
+    needle.addEventListener('click', () => {
+        needles.forEach(item => item.classList.remove('active'));
+        needle.classList.add('active');
+    });
 });
 
 
+function makePaletteClick(elementId) {
+    const palette = document.getElementById(elementId);
+
+    if (!palette) return;
+
+    let step = 0;
+    const maxStep = 5;
+
+    palette.addEventListener('click', () => {
+        if (step < maxStep) {
+            step++;
+            palette.style.backgroundPositionX = `${-step * 10}vw`;
+        }
+    });
+}
+makePaletteClick('palitra1');
+makePaletteClick('palitra2');
+makePaletteClick('palitra3');
+makePaletteClick('palitra4');

@@ -7,7 +7,7 @@ body {
 
 #fonchik1 {
     position: relative;
-    width: 100vw;
+    width: 99vw;
 }
 
 #oblachka {
@@ -379,8 +379,10 @@ body {
 
 #igolo1, #igolo2, #igolo3, #igolo4 {
     position: absolute;
+    transition: margin-left 0.5s ease, margin-top 0.5s ease;
     width: 2.5vw;
     margin-top: -9vw;
+    cursor: url('../images/kyrsor1.png') 0 0, pointer;
 }
 
 #igolo4 {
@@ -397,6 +399,14 @@ margin-left: 19vw
 
 #igolo1 {
 margin-left: 25vw
+}
+
+#igolo1.active,
+#igolo2.active,
+#igolo3.active,
+#igolo4.active {
+    margin-left: 16.75vw;
+    margin-top: -21vw;
 }
 
 #kraska1, #kraska2, #kraska3, #kraska4 {
@@ -421,17 +431,37 @@ margin-left: 25vw
     margin-left: 81.5vw;
 }
 
-/* #palitra1 {
+#palitra1, #palitra2, #palitra3, #palitra4 {
   position: absolute;
   width: 10vw;
-  margin-top: -11vw;  
-  margin-left: 45vw;
-  aspect-ratio: 1 / 1;           
-  background-image: url("./../images/5Ekolpak1.svg");
+  height: calc(10vw * 214 / 265);
+  margin-top: -11vw;
+  aspect-ratio: 1 / 1;
   background-repeat: no-repeat;
   background-size: 600% 100%; 
-} */
+  background-position: 0% 0%;
+  cursor: url('../images/kyrsor1.png') 0 0, pointer;
+}
 
+#palitra1 {
+    margin-left: 45vw;
+    background-image: url("./../images/5Ekolpak1.svg");
+}
+
+#palitra2 {
+    margin-left: 55vw;
+    background-image: url("./../images/5Ekolpak2.svg");
+}
+
+#palitra3 {
+    margin-left: 65vw;
+    background-image: url("./../images/5Ekolpak3.svg");
+}
+
+#palitra4 {
+    margin-left: 75vw;
+    background-image: url("./../images/5Ekolpak4.svg");
+}
 
 #okno4 {
     position: absolute;
@@ -564,7 +594,7 @@ margin-left: 25vw
     margin-top: -33.9vw;
 }
 
-#hb1, #hb2, #lb3, #hb4, #hb5, #hb6, #hb7, #hb8, #hb9, #hb10, #hb11 {
+#hb1, #hb2, #hb3, #hb4, #hb5, #hb6, #hb7, #hb8, #hb9, #hb10, #hb11 {
     position: absolute;
 }
 
@@ -639,7 +669,204 @@ margin-left: 25vw
     width: 32.1vw;
     margin-top: -33.89vw;
     margin-left: 21.96vw;
+    opacity: 0;
 }
+
+#e1, #e2, #e3, #e4, #e5, #e6, #e7, #e8, #e9, #e10, #e11 {
+    position: absolute;
+}
+
+#e1 {
+    width: 22.9vw;
+    margin-left: 26.5vw;
+    margin-top: -32.3vw;
+}
+
+#e2 {
+    width: 25.3vw;
+    margin-left: 25.4vw;
+    margin-top: -28.1vw;
+}
+
+#e3 {
+    width: 30.7vw;
+    margin-left: 22.6vw;
+    margin-top: -24.6vw;
+}
+
+#e4 {
+    width: 31.8vw;
+    margin-left: 22.1vw;
+    margin-top: -21.5vw;
+}
+
+#e5 {
+    width: 31.8vw;
+    margin-left: 22.1vw;
+    margin-top: -15.2vw;
+}
+
+#e6 {
+    width: 31.8vw;
+    margin-left: 22.1vw;
+    margin-top: -8.9vw;
+}
+
+#e7 {
+    width: 27.6vw;
+    margin-left: 24.15vw;
+    margin-top: -5.9vw;
+}
+
+#e8 {
+    width: 8vw;
+    margin-left: 34vw;
+    margin-top: -8.1vw;
+}
+
+#e9 {
+    width: 5vw;
+    margin-left: 35.5vw;
+    margin-top: -12.55vw;
+}
+
+#e10 {
+    width: 9vw;
+    margin-left: 33.5vw;
+    margin-top: -18.4vw; 
+}
+
+#e11 {
+    width: 19.7vw;
+    margin-left: 28.1vw;
+    margin-top: -33.9vw;
+}
+
+#p1, #p2, #p3, #p4, #p5, #p6, #p7, #p8, #p9, #p10, #p11 {
+    position: absolute;
+}
+
+#p1 {
+    width: 22.9vw;
+    margin-left: 26.5vw;
+    margin-top: -32.3vw;
+}
+
+#p2 {
+    width: 25.3vw;
+    margin-left: 25.4vw;
+    margin-top: -28.1vw;
+}
+
+#p3 {
+    width: 30.7vw;
+    margin-left: 22.6vw;
+    margin-top: -24.6vw;
+}
+
+#p4 {
+    width: 31.8vw;
+    margin-left: 22.1vw;
+    margin-top: -21.5vw;
+}
+
+#p5 {
+    width: 31.8vw;
+    margin-left: 22.1vw;
+    margin-top: -15.2vw;
+}
+
+#p6 {
+    width: 31.8vw;
+    margin-left: 22.1vw;
+    margin-top: -8.9vw;
+}
+
+#p7 {
+    width: 27.6vw;
+    margin-left: 24.15vw;
+    margin-top: -5.9vw;
+}
+
+#p8 {
+    width: 8vw;
+    margin-left: 34vw;
+    margin-top: -8.1vw;
+}
+
+#p9 {
+    width: 5vw;
+    margin-left: 35.5vw;
+    margin-top: -12.55vw;
+}
+
+#p10 {
+    width: 9vw;
+    margin-left: 33.5vw;
+    margin-top: -18.4vw; 
+}
+
+#p11 {
+    width: 19.7vw;
+    margin-left: 28.1vw;
+    margin-top: -33.9vw;
+}
+
+#lb1-2, #lb2-2, #lb3-2, #lb4-2, #lb5-2, #lb6-2, #lb7-2 {
+    position: absolute;
+}
+
+#lb1-2 {
+    width: 7vw;
+    margin-left: 34.5vw;
+    margin-top: -34vw;
+}
+
+#lb2-2 {
+    width: 17vw;
+    margin-left: 29.5vw;
+    margin-top: -31.9vw;  
+}
+
+#lb3-2 {
+    width: 28vw;
+    margin-left: 24vw;
+    margin-top: -28vw;
+}
+
+#lb4-2 {
+    width: 30.4vw;
+    margin-left: 22.8vw;
+    margin-top: -26.5vw;
+}
+
+#lb5-2 {
+    width: 13.3vw;
+    margin-left: 31.3vw;
+    margin-top: -12.2vw;
+}
+
+#lb6-2 {
+    width: 28vw;
+    margin-left: 24vw;
+    margin-top: -4.2vw;
+}
+
+#lb7-2 {
+    width: 32vw;
+    margin-left: 22vw;
+    margin-top: -13vw;
+}
+
+#contur2 {
+    position: absolute;
+    width: 32.1vw;
+    margin-top: -33.89vw;
+    margin-left: 21.96vw; 
+}
+
+
+
 
 
 /* #govno {
