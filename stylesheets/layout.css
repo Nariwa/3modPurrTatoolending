@@ -865,6 +865,26 @@ margin-left: 25vw
     margin-left: 21.96vw; 
 }
 
+#here6efon {
+    position: absolute;
+    width: 20vw;
+    margin-top: -36vw;
+    margin-left: 76.5vw;
+}
+
+#here6emachine {
+position: absolute;
+    width: 25vw;
+    margin-top: -34vw;
+    margin-left: 74vw;
+}
+
+#here6ekol1, #here6ekol2, #here6ekol3, #here6ekol4 {
+    position: absolute;
+    width: 5vw;
+    margin-top: -2vw;
+    margin-left: 77vw;
+}
 
 
 
