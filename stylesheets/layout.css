@@ -83,16 +83,569 @@ body {
     width: 13vw;
     margin-top: -39vw;
     margin-left: 63vw;
+    cursor: url('../images/kyrsor1.png') 0 0, pointer;
+}
+
+#strela {
+    position: absolute;
+    width: 3.5vw;
+    margin-top: -32.9vw;
+    margin-left: 69.5vw;
+    transform-origin: 0% 50%;
+    animation: clockArrow 60s linear infinite;
+}
+
+#zvonok {
+    position: absolute;
+    width: 6vw;
+    margin-top: -6vw;
+    margin-left: 11vw;
+    cursor: url('../images/kyrsor1.png') 0 0, pointer;
+}
+
+#ribkakartinka {
+    position: absolute;
+    width: 15vw;
+    margin-top: -25vw;
+    margin-left: 76vw;
+    cursor: url('../images/kyrsor1.png') 0 0, pointer;
+}
+
+#ribkakartinka.swing  {
+    animation: bellSwing 0.4s ease;
+}
+
+#yzorik {
+    position: absolute;
+    width: 12vw;
+    margin-top: -38.8vw;
+    margin-left: 79vw;
+    cursor: url('../images/kyrsor1.png') 0 0, pointer;
+}
+
+#yzorik.swing  {
+    animation: bellSwing 0.4s ease;
+}
+
+#viktorkot {
+    position: absolute;
+    width: 27vw;
+    margin-top: 13.5vw;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
 }
 
 
+#firstwords {
+    position: absolute;
+    font-family: Geologica;
+    font-size: 2.1vw;
+    color: #0F1A2C;
+    margin-top: -38vw;
+    margin-left: 6vw;
+    line-height: 1.3;
+    transform: translateY(20px);
+}
 
 
+#truewords {
+    position: absolute;
+    font-family: Geologica;
+    font-size: 2.1vw;
+    color: #0F1A2C;
+    margin-top: -24vw;
+    margin-left: 6vw;
+    line-height: 1.3;
+    transform: translateY(20px);  
+}
 
-#govno {
+#falsewords {
+    position: absolute;
+    font-family: Geologica;
+    font-size: 2.1vw;
+    color: #0F1A2C;
+    margin-top: -19vw;
+    margin-left: 6vw;
+    line-height: 1.3;
+    transform: translateY(20px);  
+}
+
+#viktorkot,
+#firstwords,
+#truewords,
+#falsewords {
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+#viktorkot.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+#firstwords.show,
+#truewords.show,
+#falsewords.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+#firstwords {
+    transition-delay: 0.2s;
+}
+
+#truewords {
+    transition-delay: 0.5s;
+}
+
+#falsewords {
+    transition-delay: 0.8s;
+}
+
+#truewordsotvet {
+    position: absolute;
+    font-family: Geologica;
+    font-size: 2.1vw;
+    color: #0F1A2C;
+    margin-top: -38vw;
+    margin-left: 6vw;
+    line-height: 1.3;
+    opacity: 0;
+}
+
+#falsewordsotvet {
+    position: absolute;
+    font-family: Geologica;
+    font-size: 2.1vw;
+    color: #0F1A2C;
+    margin-top: -38vw;
+    margin-left: 6vw;
+    line-height: 1.3;
+    opacity: 0;
+}
+
+.hide {
+    opacity: 0 !important;
+    pointer-events: none;
+    transition: opacity 0.1s ease;
+}
+
+.show-answer {
+    opacity: 1 !important;
+    transition: opacity 3s ease;
+}
+
+#truewordsotvet {
+    opacity: 0;
+}
+
+#falsewordsotvet {
+    opacity: 0;
+}
+
+#truewords,
+#falsewords {
+    cursor: url('../images/kyrsor1.png') 0 0, pointer;
+}
+
+#podskazka1 {
+    position: absolute;
+    width: 3vw;
+    margin-top: -41vw;
+    margin-left: 92.5vw;
+}
+
+#okno2 {
+    position: absolute;
+    width: 34vw;
+    margin-top: -38.5vw;
+    margin-left: 58vw; 
+    opacity: 0;
+}
+
+#help1otvet {
+    position: absolute;
+    font-family: Geologica;
+    font-size: 2vw;
+    color: #0F1A2C;
+    margin-top: -37.5vw;
+    margin-left: 60vw;
+    line-height: 1.3;
+    opacity: 0;
+}
+
+.show-hint {
+    opacity: 1 !important;
+    transition: opacity 0.3s ease;
+}
+
+#gradient3 {
+    width: 94vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#bazakniga {
+    width: 60.5vw;
+    position: absolute;
+    margin-top: 12vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#tatyshka1 {
+    position: absolute;
+    width: 23vw;
+    margin-top: -41vw;
+    margin-left: 25vw;
+}
+
+#tatyshka2 {
+    position: absolute;
+    width: 16vw;
+    margin-top: -43vw;
+    margin-left: 54vw;
+}
+
+#tatyshka3 {
+    position: absolute;
+    width: 22vw;
+    margin-top: -43vw;
+    margin-left: 25vw;
+    opacity: 0;
+}
+
+#tatyshka4 {
+    position: absolute;
+    width: 23vw;
+    margin-top: -42vw;
+    margin-left: 51vw;
+    opacity: 0;
+}
+
+#strela1 {
+    position: absolute;
+    width: 4vw;
+    margin-top: -32vw;
+    margin-left: 84vw;
+}
+
+#strela2 {
+    position: absolute;
+    width: 4vw;
+    margin-top: -32vw;
+    margin-left: 11vw;
+}
+
+#fonchik4 {
+    width: 94vw;
+    position: relative;
+    margin-left: 2.5vw; 
+}
+
+#tatoomachine {
+    position: absolute;
+    width: 11vw;
+    margin-top: -39vw;
+    margin-left: 12.5vw;
+
+}
+
+#podskazka2 {
+    position: absolute;
+    width: 3vw;
+    margin-top: -57vw;
+    margin-left: 92.5vw; 
+}
+
+#okno3 {
+    position: absolute;
+    width: 34vw;
+    margin-top: -54vw;
+    margin-left: 58vw; 
+    opacity: 0;
+}
+
+#help2otvet {
+    position: absolute;
+    font-family: Geologica;
+    font-size: 2vw;
+    color: #0F1A2C;
+    margin-top: -53vw;
+    margin-left: 60vw;
+    line-height: 1.3;
+    opacity: 0;
+}
+
+#igolo1, #igolo2, #igolo3, #igolo4 {
+    position: absolute;
+    width: 2.5vw;
+    margin-top: -9vw;
+}
+
+#igolo4 {
+margin-left: 7vw
+}
+
+#igolo3 {
+margin-left: 13vw
+}
+
+#igolo2 {
+margin-left: 19vw
+}
+
+#igolo1 {
+margin-left: 25vw
+}
+
+#kraska1, #kraska2, #kraska3, #kraska4 {
+    position: absolute;
+    width: 9vw;
+    margin-top: -36vw;
+}
+
+#kraska1 {
+    margin-left: 40.5vw;
+}
+
+#kraska2 {
+    margin-left: 54vw;
+}
+
+#kraska3 {
+    margin-left: 68vw;
+}
+
+#kraska4 {
+    margin-left: 81.5vw;
+}
+
+/* #palitra1 {
+  position: absolute;
+  width: 10vw;
+  margin-top: -11vw;  
+  margin-left: 45vw;
+  aspect-ratio: 1 / 1;           
+  background-image: url("./../images/5Ekolpak1.svg");
+  background-repeat: no-repeat;
+  background-size: 600% 100%; 
+} */
+
+
+#okno4 {
+    position: absolute;
+    width: 16vw;
+    margin-top: -36vw;
+    margin-left: 13.5vw;
+    opacity: 0;
+}
+
+#help4otvet {
+    position: absolute;
+    font-family: Geologica;
+    font-size: 2vw;
+    color: #0F1A2C;
+    margin-top: -34.5vw;
+    margin-left: 15.5vw;
+    line-height: 1.3;
+    opacity: 0;
+}
+
+#podskazka4 {
+    position: absolute;
+    width: 3vw;
+    margin-top: -38.5vw;
+    margin-left: 29vw;
+}
+
+#okno5 {
+    position: absolute;
+    width: 34vw;
+    margin-top: -36vw;
+    margin-left: 59vw;
+    opacity: 0;
+
+}
+
+#help5otvet {
+    position: absolute;
+    font-family: Geologica;
+    font-size: 2vw;
+    color: #0F1A2C;
+    margin-top: -35vw;
+    margin-left: 64vw;
+    line-height: 1.3;
+    opacity: 0;
+}
+
+#podskazka5 {
+    position: absolute;
+    width: 3vw;
+    margin-top: -38.5vw;
+    margin-left: 92.5vw;
+}
+
+#traf {
+    position: relative;
+    width: 32vw;
+    margin-top: 9vw;
+    margin-left: 22vw;
+    opacity: 0;
+}
+
+#lb1, #lb2, #lb3, #lb4, #lb5, #lb6, #lb7, #lb8, #lb9, #lb10, #lb11 {
+    position: absolute;
+}
+
+#lb1 {
+    width: 22.9vw;
+    margin-left: 26.5vw;
+    margin-top: -32.3vw;
+}
+
+#lb2 {
+    width: 25.3vw;
+    margin-left: 25.4vw;
+    margin-top: -28.1vw;
+}
+
+#lb3 {
+    width: 30.7vw;
+    margin-left: 22.6vw;
+    margin-top: -24.6vw;
+}
+
+#lb4 {
+    width: 31.8vw;
+    margin-left: 22.1vw;
+    margin-top: -21.5vw;
+}
+
+#lb5 {
+    width: 31.8vw;
+    margin-left: 22.1vw;
+    margin-top: -15.2vw;
+}
+
+#lb6 {
+    width: 31.8vw;
+    margin-left: 22.1vw;
+    margin-top: -8.9vw;
+}
+
+#lb7 {
+    width: 27.6vw;
+    margin-left: 24.15vw;
+    margin-top: -5.9vw;
+}
+
+#lb8 {
+    width: 8vw;
+    margin-left: 34vw;
+    margin-top: -8.1vw;
+}
+
+#lb9 {
+    width: 5vw;
+    margin-left: 35.5vw;
+    margin-top: -12.55vw;
+}
+
+#lb10 {
+    width: 9vw;
+    margin-left: 33.5vw;
+    margin-top: -18.4vw; 
+}
+
+#lb11 {
+    width: 19.7vw;
+    margin-left: 28.1vw;
+    margin-top: -33.9vw;
+}
+
+#hb1, #hb2, #lb3, #hb4, #hb5, #hb6, #hb7, #hb8, #hb9, #hb10, #hb11 {
+    position: absolute;
+}
+
+#hb1 {
+    width: 22.9vw;
+    margin-left: 26.5vw;
+    margin-top: -32.3vw;
+}
+
+#hb2 {
+    width: 25.3vw;
+    margin-left: 25.4vw;
+    margin-top: -28.1vw;
+}
+
+#hb3 {
+    width: 30.7vw;
+    margin-left: 22.6vw;
+    margin-top: -24.6vw;
+}
+
+#hb4 {
+    width: 31.8vw;
+    margin-left: 22.1vw;
+    margin-top: -21.5vw;
+}
+
+#hb5 {
+    width: 31.8vw;
+    margin-left: 22.1vw;
+    margin-top: -15.2vw;
+}
+
+#hb6 {
+    width: 31.8vw;
+    margin-left: 22.1vw;
+    margin-top: -8.9vw;
+}
+
+#hb7 {
+    width: 27.6vw;
+    margin-left: 24.15vw;
+    margin-top: -5.9vw;
+}
+
+#hb8 {
+    width: 8vw;
+    margin-left: 34vw;
+    margin-top: -8.1vw;
+}
+
+#hb9 {
+    width: 5vw;
+    margin-left: 35.5vw;
+    margin-top: -12.55vw;
+}
+
+#hb10 {
+    width: 9vw;
+    margin-left: 33.5vw;
+    margin-top: -18.4vw; 
+}
+
+#hb11 {
+    width: 19.7vw;
+    margin-left: 28.1vw;
+    margin-top: -33.9vw;
+}
+
+#contur1 {
+    position: absolute;
+    width: 32.1vw;
+    margin-top: -33.89vw;
+    margin-left: 21.96vw;
+}
+
+
+/* #govno {
     width: 100vw;
     opacity: 30%;
     position: absolute;
     top: 0;
     left: 0;
-}
+} */
