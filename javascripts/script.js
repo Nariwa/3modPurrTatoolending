@@ -24,6 +24,20 @@ zvukovichek('palitra1', './sounds/kaplya.mp3');
 zvukovichek('palitra2', './sounds/kaplya.mp3');
 zvukovichek('palitra3', './sounds/kaplya.mp3');
 zvukovichek('palitra4', './sounds/kaplya.mp3');
+zvukovichek('strela1', './sounds/strelki.mp3');
+zvukovichek('strela2', './sounds/strelki.mp3');
+zvukovichek('igolo1', './sounds/igolki.mp3');
+zvukovichek('igolo2', './sounds/igolki.mp3');
+zvukovichek('igolo3', './sounds/igolki.mp3');
+zvukovichek('igolo4', './sounds/igolki.mp3');
+zvukovichek('ekr7da3', './sounds/puzirki.mp3', 'swing');
+zvukovichek('ekr7da4', './sounds/puzirki.mp3', 'swing');
+zvukovichek('ekr7da5', './sounds/puzirki.mp3', 'swing');
+zvukovichek('ekr7da6', './sounds/puzirki.mp3', 'swing');
+zvukovichek('a8ekr3', './sounds/plenka.mp3', 'swing');
+zvukovichek('le92', './sounds/pozitiv.mp3', 'swing');
+
+
 
 
 function showElementsOnClick(buttonId, soundPath, elementIds) {
@@ -134,172 +148,6 @@ makePaletteClick('palitra3');
 makePaletteClick('palitra4');
 
 
-// const strela1 = document.getElementById('strela1');
-// const strela2 = document.getElementById('strela2');
-// const tatyshki = document.getElementById('tatyshki');
-
-// function toggleTattooSet() {
-//     tatyshki.classList.toggle('tattoo-set-1');
-//     tatyshki.classList.toggle('tattoo-set-2');
-// }
-
-// strela1.addEventListener('click', toggleTattooSet);
-// strela2.addEventListener('click', toggleTattooSet);
-
-// // function chooseContour(buttonId, contourId, allContourIds) {
-// //     const button = document.getElementById(buttonId);
-// //     const contour = document.getElementById(contourId);
-
-// //     if (!button || !contour) return;
-
-// //     button.addEventListener('click', () => {
-// //         allContourIds.forEach(id => {
-// //             const item = document.getElementById(id);
-// //             if (item) {
-// //                 item.classList.remove('show');
-// //             }
-// //         });
-
-// //         contour.classList.add('show');
-// //     });
-// // }
-// function chooseContour(buttonId, contourId, allContourIds) {
-//     const button = document.getElementById(buttonId);
-//     const contour = document.getElementById(contourId);
-//     const ekran6 = document.getElementById('ekran6');
-
-//     if (!button || !contour || !ekran6) return;
-
-//     button.addEventListener('click', () => {
-//         allContourIds.forEach(id => {
-//             const item = document.getElementById(id);
-//             if (item) {
-//                 item.classList.remove('show');
-//             }
-//         });
-
-//         contour.classList.add('show');
-
-//         resetPattern1Painting();
-
-//         if (contourId === 'contur1') {
-//             ekran6.classList.add('pattern1-active');
-//         } else {
-//             ekran6.classList.remove('pattern1-active');
-//         }
-//     });
-// }
-// const allContours = ['contur1', 'contur2', 'contur3', 'contur4'];
-
-// chooseContour('tatyshka1', 'contur1', allContours);
-// chooseContour('tatyshka2', 'contur2', allContours);
-// chooseContour('tatyshka3', 'contur3', allContours);
-// chooseContour('tatyshka4', 'contur4', allContours);
-
-
-
-
-
-
-// //////////////
-// let currentPaint = 'lb'; // по умолчанию light blue
-
-// function selectPaint(buttonId, paintKey) {
-//     const button = document.getElementById(buttonId);
-//     if (!button) return;
-
-//     button.addEventListener('click', () => {
-//         currentPaint = paintKey;
-//     });
-// }
-
-// selectPaint('here6ekol1', 'lb');   // light blue
-// selectPaint('here6ekol2', 'hb');   // hard blue
-// selectPaint('here6ekol3', 'e');    // orange
-// selectPaint('here6ekol4', 'p');    // pink
-
-// const pattern1Files = {
-//     lb: {
-//         p1: './images/tatoo for 6E/light blue tatoo/1alb.svg',
-//         p2: './images/tatoo for 6E/light blue tatoo/1blb.svg',
-//         p3: './images/tatoo for 6E/light blue tatoo/1clb.svg',
-//         p4: './images/tatoo for 6E/light blue tatoo/1dlb.svg',
-//         p5: './images/tatoo for 6E/light blue tatoo/1elb.svg',
-//         p6: './images/tatoo for 6E/light blue tatoo/1flb.svg',
-//         p7: './images/tatoo for 6E/light blue tatoo/1glb.svg',
-//         p8: './images/tatoo for 6E/light blue tatoo/1hlb.svg',
-//         p9: './images/tatoo for 6E/light blue tatoo/1ilb.svg',
-//         p10: './images/tatoo for 6E/light blue tatoo/1jlb.svg',
-//         p11: './images/tatoo for 6E/light blue tatoo/1klb.svg'
-//     },
-//     hb: {
-//         p1: './images/tatoo for 6E/hard blue tatoo/1ahb.svg',
-//         p2: './images/tatoo for 6E/hard blue tatoo/1bhb.svg',
-//         p3: './images/tatoo for 6E/hard blue tatoo/1chb.svg',
-//         p4: './images/tatoo for 6E/hard blue tatoo/1dhb.svg',
-//         p5: './images/tatoo for 6E/hard blue tatoo/1ehb.svg',
-//         p6: './images/tatoo for 6E/hard blue tatoo/1fhb.svg',
-//         p7: './images/tatoo for 6E/hard blue tatoo/1ghb.svg',
-//         p8: './images/tatoo for 6E/hard blue tatoo/1hhb.svg',
-//         p9: './images/tatoo for 6E/hard blue tatoo/1ihb.svg',
-//         p10: './images/tatoo for 6E/hard blue tatoo/1jhb.svg',
-//         p11: './images/tatoo for 6E/hard blue tatoo/1khb.svg'
-//     },
-//     e: {
-//         p1: './images/tatoo for 6E/orange tatoo/1ae.svg',
-//         p2: './images/tatoo for 6E/orange tatoo/1be.svg',
-//         p3: './images/tatoo for 6E/orange tatoo/1ce.svg',
-//         p4: './images/tatoo for 6E/orange tatoo/1de.svg',
-//         p5: './images/tatoo for 6E/orange tatoo/1ee.svg',
-//         p6: './images/tatoo for 6E/orange tatoo/1fe.svg',
-//         p7: './images/tatoo for 6E/orange tatoo/1ge.svg',
-//         p8: './images/tatoo for 6E/orange tatoo/1he.svg',
-//         p9: './images/tatoo for 6E/orange tatoo/1ie.svg',
-//         p10: './images/tatoo for 6E/orange tatoo/1je.svg',
-//         p11: './images/tatoo for 6E/orange tatoo/1ke.svg'
-//     },
-//     p: {
-//         p1: './images/tatoo for 6E/pink tatoo/1ap.svg',
-//         p2: './images/tatoo for 6E/pink tatoo/1bp.svg',
-//         p3: './images/tatoo for 6E/pink tatoo/1cp.svg',
-//         p4: './images/tatoo for 6E/pink tatoo/1dp.svg',
-//         p5: './images/tatoo for 6E/pink tatoo/1ep.svg',
-//         p6: './images/tatoo for 6E/pink tatoo/1fp.svg',
-//         p7: './images/tatoo for 6E/pink tatoo/1gp.svg',
-//         p8: './images/tatoo for 6E/pink tatoo/1hp.svg',
-//         p9: './images/tatoo for 6E/pink tatoo/1ip.svg',
-//         p10: './images/tatoo for 6E/pink tatoo/1jp.svg',
-//         p11: './images/tatoo for 6E/pink tatoo/1kp.svg'
-//     }
-// };
-
-// function setupPattern1Painting() {
-//     const partIds = ['p1','p2','p3','p4','p5','p6','p7','p8','p9','p10','p11'];
-
-//     partIds.forEach(partId => {
-//         const part = document.getElementById(partId);
-//         if (!part) return;
-
-//         part.addEventListener('click', () => {
-//             part.src = pattern1Files[currentPaint][partId];
-//             part.style.opacity = '1';
-//         });
-//     });
-// }
-
-// setupPattern1Painting();
-
-// function resetPattern1Painting() {
-//     const partIds = ['p1','p2','p3','p4','p5','p6','p7','p8','p9','p10','p11'];
-
-//     partIds.forEach(partId => {
-//         const part = document.getElementById(partId);
-//         if (!part) return;
-
-//         part.style.opacity = '0';
-//     });
-// }
-
 const strela1 = document.getElementById('strela1');
 const strela2 = document.getElementById('strela2');
 const tatyshki = document.getElementById('tatyshki');
@@ -312,7 +160,6 @@ function toggleTattooSet() {
 strela1.addEventListener('click', toggleTattooSet);
 strela2.addEventListener('click', toggleTattooSet);
 
-/* -------------------- ВЫБОР КРАСКИ -------------------- */
 
 let currentPaint = 'lb';
 
@@ -325,14 +172,13 @@ function selectPaint(buttonId, paintKey) {
     });
 }
 
-/* У тебя в HTML here6ekol3 и here6ekol4 перепутаны местами по картинкам,
-   поэтому здесь уже выставлено правильно по визуальному порядку. */
+
 selectPaint('here6ekol1', 'lb');
 selectPaint('here6ekol2', 'hb');
 selectPaint('here6ekol4', 'e');
 selectPaint('here6ekol3', 'p');
 
-/* -------------------- ВСЕ УЗОРЫ -------------------- */
+
 
 const patterns = {
     contur1: {
