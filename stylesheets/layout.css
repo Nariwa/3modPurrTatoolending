@@ -1455,3 +1455,86 @@ margin-left: -85vw;
     transition: opacity 0.4s ease, transform 0.4s ease;
     pointer-events: none;
 }
+
+#a8ekr1 {
+    margin-top: 2vw;
+    position: absolute;
+    width: 50vw;
+    margin-left: 2vw;
+}
+
+#a8ekr2 {
+    margin-top: 4vw;
+    position: absolute;
+    width: 30vw;
+    margin-left: 12vw;
+}
+
+#a8ekr3 {
+    margin-top: 2vw;
+    position: absolute;
+    width: 55vw;
+    margin-left: -40vw;
+    transition: transform 0.5s ease;
+}
+
+#le91 {
+    margin-top: 2vw;
+    position: absolute;
+    width: 42.8vw;
+    margin-left: 54vw;
+}
+
+#le92 {
+    margin-top: 4vw;
+    position: absolute;
+    width: 23vw;
+    margin-left: 64vw;
+}
+
+#le93 {
+    margin-top: 8vw;
+    position: absolute;
+    width: 40vw;
+    margin-left: 55vw;
+}
+
+#simon {
+    position: absolute;
+    font-family: Geologica;
+    font-size: 2vw;
+    color: #0F1A2C;
+    margin-top: 33vw;
+    margin-left: 63.5vw;
+    line-height: 1.3;
+}
+
+#le93, #simon {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#le93 {
+    z-index: 20;
+}
+
+#le92 {
+    z-index: 30;
+    cursor: pointer;
+}
+
+#simon {
+    z-index: 25;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.06); }
+    100% { transform: scale(1); }
+}
+
+#theend {
+    position: absolute;
+    width: 99vw;
+    margin-top: 50vw;
+}

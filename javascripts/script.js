@@ -577,3 +577,30 @@ items.forEach(item => {
     });
 });
 
+const el = document.getElementById('a8ekr3');
+
+document.addEventListener('DOMContentLoaded', () => {
+    const el = document.getElementById('a8ekr3');
+
+    el.addEventListener('click', () => {
+        el.style.transform = 'translateX(38vw)';
+    });
+});
+
+window.addEventListener('load', () => {
+    const btn = document.getElementById('le92');
+    const effect = document.getElementById('le93');
+    const text = document.getElementById('simon');
+
+    btn.onclick = () => {
+        // показать
+        effect.style.opacity = '1';
+        text.style.opacity = '1';
+
+        effect.style.pointerEvents = 'auto';
+        text.style.pointerEvents = 'auto';
+
+        // пульсация (важно: перезаписываем transform)
+        effect.style.animation = 'pulse 1s infinite ease-in-out';
+    };
+});
