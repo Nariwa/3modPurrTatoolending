@@ -804,6 +804,101 @@ margin-left: 25vw
     margin-top: -33.9vw;
 }
 
+
+#p1, #p2, #p3, #p4, #p5, #p6, #p7, #p8, #p9, #p10, #p11,
+#pipi1, #pipi2, #pipi3, #pipi4, #pipi5, #pipi6, #pipi7,
+#pin41, #pin42, #pin43,
+#pinkforstar1, #pinkforstar2, #pinkforstar3, #pinkforstar4 {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+    z-index: 5;
+}
+
+#tatushka1var1 img[id^="lb"],
+#tatushka1var2 img[id^="hb"],
+#tatushka1var3 img[id^="e"] {
+    display: none;
+}
+
+#tatushka2var1 img[id^="lb"],
+#tatushka2var2 img[id^="hb"],
+#tatushka2var3 img[id^="ell"] {
+    display: none;
+}
+
+#tatushka3var1 img[id^="or"],
+#tatushka3var2 img[id^="hardb"],
+#tatushka3var3 img[id^="lightb"] {
+    display: none;
+}
+
+#tatushka4var1 img[id^="lbforstar"],
+#tatushka4var2 img[id^="hbforstar"],
+#tatushka4var4 img[id^="yellowforstar"] {
+    display: none;
+}
+
+
+#ekran6.pattern1-active #p1,
+#ekran6.pattern1-active #p2,
+#ekran6.pattern1-active #p3,
+#ekran6.pattern1-active #p4,
+#ekran6.pattern1-active #p5,
+#ekran6.pattern1-active #p6,
+#ekran6.pattern1-active #p7,
+#ekran6.pattern1-active #p8,
+#ekran6.pattern1-active #p9,
+#ekran6.pattern1-active #p10,
+#ekran6.pattern1-active #p11 {
+    pointer-events: auto;
+    cursor: url('../images/kyrsor1.png') 0 0, pointer;
+}
+
+#ekran6.pattern2-active #pinkforstar1,
+#ekran6.pattern2-active #pinkforstar2,
+#ekran6.pattern2-active #pinkforstar3,
+#ekran6.pattern2-active #pinkforstar4 {
+    pointer-events: auto;
+    cursor: url('../images/kyrsor1.png') 0 0, pointer;
+}
+
+#ekran6.pattern3-active #pin41,
+#ekran6.pattern3-active #pin42,
+#ekran6.pattern3-active #pin43 {
+    pointer-events: auto;
+    cursor: url('../images/kyrsor1.png') 0 0, pointer;
+}
+
+#ekran6.pattern4-active #pipi1,
+#ekran6.pattern4-active #pipi2,
+#ekran6.pattern4-active #pipi3,
+#ekran6.pattern4-active #pipi4,
+#ekran6.pattern4-active #pipi5,
+#ekran6.pattern4-active #pipi6,
+#ekran6.pattern4-active #pipi7 {
+    pointer-events: auto;
+    cursor: url('../images/kyrsor1.png') 0 0, pointer;
+}
+#tatushka2var1 img[id^="lb"],
+#tatushka2var2 img[id^="hb"],
+#tatushka2var3 img[id^="ell"] {
+    display: none;
+}
+
+#tatushka3var1 img[id^="or"],
+#tatushka3var2 img[id^="hardb"],
+#tatushka3var3 img[id^="lightb"] {
+    display: none;
+}
+
+#tatushka4var1 img[id^="lbforstar"],
+#tatushka4var2 img[id^="hbforstar"],
+#tatushka4var4 img[id^="yellowforstar"] {
+    display: none;
+}
+
 #lb1-2, #lb2-2, #lb3-2, #lb4-2, #lb5-2, #lb6-2, #lb7-2 {
     position: absolute;
 }
@@ -988,7 +1083,6 @@ margin-left: 25vw
     margin-top: -13vw;
 }
 
-
 #here6efon {
     position: absolute;
     width: 20vw;
@@ -1008,6 +1102,7 @@ position: absolute;
     width: 4vw;
     margin-top: -2vw;
     margin-left: 77vw;
+    cursor: url('../images/kyrsor1.png') 0 0, pointer;
 }
 
 #here6ekol2 {
@@ -1033,6 +1128,7 @@ position: absolute;
     opacity: 0;
     transition: opacity 0.4s ease;
     pointer-events: none;
+    z-index: 10;
 }
 
 #contur1.show,
@@ -1104,9 +1200,9 @@ position: absolute;
 }
 
 #or41 {
-    width: 8vw;
-    margin-top: -33vw;
-    margin-left: 37.65vw;
+    width: 20vw;
+    margin-top: 10vw;
+    margin-left: 10vw;
 }
 
 #or42 {
@@ -1299,10 +1395,6 @@ position: absolute;
     margin-left: 43.4vw;
 }
 
-
-
-
-
 /* #govno {
     width: 100vw;
     opacity: 30%;
@@ -1310,3 +1402,56 @@ position: absolute;
     top: 0;
     left: 0;
 } */
+
+#ekr7da1 {
+    margin-top: 9vw;
+    position: relative;
+    width: 95vw;
+    margin-left: 2vw;
+}
+
+#ekr7da2 {
+position: absolute;
+width: 70vw;
+margin-top: 12vw;
+margin-left: -85vw;
+}
+
+#ekr7da3, #ekr7da4, #ekr7da5, #ekr7da6 {
+    position: absolute;
+    margin-left: -50vw;
+    margin-top: 28vw;
+    width: 6vw;
+
+}
+
+#ekr7da3 {
+    width: 10vw;
+    margin-left: -63vw;
+    margin-top: 27vw;
+}
+
+#ekr7da4 {
+    width: 9vw;
+    margin-left: -65vw;
+    margin-top: 29vw;
+}
+
+#ekr7da5 {
+    width: 5vw;
+    margin-left: -60vw;
+    margin-top: 32vw;
+}
+
+#ekr7da6 {
+    width: 8vw;
+    margin-left: -60vw;
+    margin-top: 31vw;
+}
+
+.fade-out {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    pointer-events: none;
+}
