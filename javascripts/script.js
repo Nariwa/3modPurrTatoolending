@@ -103,6 +103,7 @@ const text = document.getElementById('help1otvet');
 
 let hintVisible = false;
 
+
 if (podskazka) {
     podskazka.addEventListener('click', () => {
         hintVisible = !hintVisible;

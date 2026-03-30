@@ -247,31 +247,6 @@ body {
     cursor: url('../images/kyrsor1.png') 0 0, pointer;
 }
 
-#podskazka1 {
-    position: absolute;
-    width: 3vw;
-    margin-top: -41vw;
-    margin-left: 92.5vw;
-}
-
-#okno2 {
-    position: absolute;
-    width: 34vw;
-    margin-top: -38.5vw;
-    margin-left: 58vw; 
-    opacity: 0;
-}
-
-#help1otvet {
-    position: absolute;
-    font-family: Geologica;
-    font-size: 2vw;
-    color: #0F1A2C;
-    margin-top: -37.5vw;
-    margin-left: 60vw;
-    line-height: 1.3;
-    opacity: 0;
-}
 
 .show-hint {
     opacity: 1 !important;
@@ -328,6 +303,7 @@ body {
     width: 4vw;
     margin-top: -32vw;
     margin-left: 84vw;
+    cursor: url('../images/kyrsor1.png') 0 0, pointer;
 }
 
 #strela2 {
@@ -335,6 +311,7 @@ body {
     width: 4vw;
     margin-top: -32vw;
     margin-left: 11vw;
+    cursor: url('../images/kyrsor1.png') 0 0, pointer;
 }
 
 #fonchik4 {
@@ -351,31 +328,6 @@ body {
 
 }
 
-#podskazka2 {
-    position: absolute;
-    width: 3vw;
-    margin-top: -57vw;
-    margin-left: 92.5vw; 
-}
-
-#okno3 {
-    position: absolute;
-    width: 34vw;
-    margin-top: -54vw;
-    margin-left: 58vw; 
-    opacity: 0;
-}
-
-#help2otvet {
-    position: absolute;
-    font-family: Geologica;
-    font-size: 2vw;
-    color: #0F1A2C;
-    margin-top: -53vw;
-    margin-left: 60vw;
-    line-height: 1.3;
-    opacity: 0;
-}
 
 #igolo1, #igolo2, #igolo3, #igolo4 {
     position: absolute;
@@ -461,59 +413,6 @@ margin-left: 25vw
 #palitra4 {
     margin-left: 75vw;
     background-image: url("./../images/5Ekolpak4.svg");
-}
-
-#okno4 {
-    position: absolute;
-    width: 16vw;
-    margin-top: -36vw;
-    margin-left: 13.5vw;
-    opacity: 0;
-}
-
-#help4otvet {
-    position: absolute;
-    font-family: Geologica;
-    font-size: 2vw;
-    color: #0F1A2C;
-    margin-top: -34.5vw;
-    margin-left: 15.5vw;
-    line-height: 1.3;
-    opacity: 0;
-}
-
-#podskazka4 {
-    position: absolute;
-    width: 3vw;
-    margin-top: -38.5vw;
-    margin-left: 29vw;
-}
-
-#okno5 {
-    position: absolute;
-    width: 34vw;
-    margin-top: -36vw;
-    margin-left: 59vw;
-    opacity: 0;
-
-}
-
-#help5otvet {
-    position: absolute;
-    font-family: Geologica;
-    font-size: 2vw;
-    color: #0F1A2C;
-    margin-top: -35vw;
-    margin-left: 64vw;
-    line-height: 1.3;
-    opacity: 0;
-}
-
-#podskazka5 {
-    position: absolute;
-    width: 3vw;
-    margin-top: -38.5vw;
-    margin-left: 92.5vw;
 }
 
 #traf {
@@ -1429,24 +1328,28 @@ margin-left: -85vw;
     width: 10vw;
     margin-left: -63vw;
     margin-top: 27vw;
+    cursor: url('../images/kyrsor1.png') 0 0, pointer;
 }
 
 #ekr7da4 {
     width: 9vw;
     margin-left: -65vw;
     margin-top: 29vw;
+    cursor: url('../images/kyrsor1.png') 0 0, pointer;
 }
 
 #ekr7da5 {
     width: 5vw;
     margin-left: -60vw;
     margin-top: 32vw;
+    cursor: url('../images/kyrsor1.png') 0 0, pointer;
 }
 
 #ekr7da6 {
     width: 8vw;
     margin-left: -60vw;
     margin-top: 31vw;
+    cursor: url('../images/kyrsor1.png') 0 0, pointer;
 }
 
 .fade-out {
@@ -1476,6 +1379,7 @@ margin-left: -85vw;
     width: 55vw;
     margin-left: -40vw;
     transition: transform 0.5s ease;
+    cursor: url('../images/kyrsor1.png') 0 0, pointer;
 }
 
 #le91 {
@@ -1490,6 +1394,7 @@ margin-left: -85vw;
     position: absolute;
     width: 23vw;
     margin-left: 64vw;
+    cursor: url('../images/kyrsor1.png') 0 0, pointer;
 }
 
 #le93 {
