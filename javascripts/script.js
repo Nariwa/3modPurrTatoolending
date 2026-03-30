@@ -343,7 +343,6 @@ const patterns = {
 }
 };
 
-/* -------------------- ПОДГОТОВКА ПОКРАСКИ -------------------- */
 
 function setupPatternPainting(pattern) {
     pattern.parts.forEach(partId => {
@@ -380,7 +379,6 @@ Object.values(patterns).forEach(pattern => {
     setupPatternPainting(pattern);
 });
 
-/* -------------------- ВЫБОР КОНТУРА -------------------- */
 
 function chooseContour(buttonId, contourId, allContourIds) {
     const button = document.getElementById(buttonId);
@@ -417,7 +415,6 @@ items.forEach(item => {
     item.addEventListener('click', () => {
         item.classList.add('fade-out');
 
-        // удалить из DOM после анимации (необязательно)
         setTimeout(() => {
             item.style.display = 'none';
         }, 400);
@@ -440,14 +437,13 @@ window.addEventListener('load', () => {
     const text = document.getElementById('simon');
 
     btn.onclick = () => {
-        // показать
+
         effect.style.opacity = '1';
         text.style.opacity = '1';
 
         effect.style.pointerEvents = 'auto';
         text.style.pointerEvents = 'auto';
 
-        // пульсация (важно: перезаписываем transform)
         effect.style.animation = 'pulse 1s infinite ease-in-out';
     };
 });
